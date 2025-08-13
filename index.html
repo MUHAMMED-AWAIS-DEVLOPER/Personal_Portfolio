@@ -4,187 +4,195 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Personal Portfolio Website - Easy Tutorials</title>
-   <link rel="stylesheet" href="Style.css">
+   <title>Personal Portfolio - Muhammad Awais</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+   <!-- ---------- HEADER ---------- -->
    <div id="header">
       <div class="container">
-         <nav>
-            <!--<img src="image/logo.png" class="logo">-->
+         <nav id="navbar">
             <h2>AWAIS</h2>
             <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Services</a></li>
-               <li><a href="#">Portfolio</a></li>
-               <li><a href="#">Contact</a></li>
-               <i class="fas fa-times"></i>
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
             </ul>
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" id="menu-btn"></i>
          </nav>
+
          <div class="header-text">
             <p>Web Developer</p>
-            <h1>hi,I'm<span> Muhammad Awais</span><br> From Pakistan</h1>
+            <h1>Hi, I'm <span>Muhammad Awais</span><br> From Pakistan</h1>
          </div>
       </div>
    </div>
-   <!----------about-------- -->
+
+   <!-- ---------- ABOUT ---------- -->
    <div id="about">
       <div class="container">
          <div class="row">
             <div class="about-col-1">
-               <img src="image/pic.jfif">
+               <img src="image/pic.jfif" alt="Profile">
             </div>
             <div class="about-col-2">
-
                <h1 class="sub-title">About Me</h1>
-               <p>Hi, My Name is  Muhammad Awais. I'm a Web Developer Man.  I Make a Web sized. My Salary is fifty Dollar.
-                   </p>
+               <p>Hi, My Name is Muhammad Awais. I'm a Web Developer. I make responsive websites.</p>
 
-                  <div class="tab-titles">
-                     <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                      <p class="tab-links" onclick="opentab('experience')">Experience</p> 
-                       <p class="tab-links" onclick="opentab('education')">Education</p>
-                  </div>
-                   <div class="tab-contents active-tab" id="Skills">
-                     <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                         <li><span>Web Development</span><br>web app Development</li>
-                          <li><span>App Development</span><br>Building Android/ios apps</li>
-                     </ul>
-                   </div>
-                    <div class="tab-contents" id="experience">
-                     <ul>
-                        <li><span>2021-Current</span><br>UI/UX Design Training at Et Institute</li>
-                         <li><span>2019-2021</span><br>Team lead at StarApp LLC.</li>
-                          <li><span>2017-2019</span><br>UI/UX Design Executive at coin Digital Ltd.</li>
-                          <li><span>2016-2017</span><br>Internship at ekart ecommerce.</li>
-                     </ul>
-                   </div>
-                    <div class="tab-contents" id="education">
-                     <ul>
-                        <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
-                         <li><span>2016</span><br>MEA from MIT Bangalore.</li>
-                          <li><span>2014</span><br>BBA from ISM Bangalore.</li>
-                     </ul>
-                   </div>
+               <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div>
+
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                     <li><span>Web Development</span><br>Building Websites</li>
+                     <li><span>App Development</span><br>Building Android/iOS apps</li>
+                  </ul>
+               </div>
+
+               <div class="tab-contents" id="experience">
+                  <ul>
+                     <li><span>2021-Current</span><br>UI/UX Design Training at ET Institute</li>
+                     <li><span>2019-2021</span><br>Team lead at StarApp LLC.</li>
+                     <li><span>2017-2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                  </ul>
+               </div>
+
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                     <li><span>2016</span><br>MEA from MIT Bangalore</li>
+                     <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                  </ul>
+               </div>
             </div>
          </div>
       </div>
    </div>
-   <!-------------services----------------- -->
-   <div id="Services">
-   <div class="container">
-    <h1 class="sub-title">My Services</h1>
-    <div class="Services-list">
-        <div>
-            <h2>Web Design</h2>
-             <p>Hi, My Name Is Muhammad Awais. I'm a Web Developer.<br> I Make a Web sized. My Salary is Fifty Dollar.
-             </p>
-             <a href="#">Learn more.</a>
+
+   <!-- ---------- SERVICES ---------- -->
+   <div id="services">
+      <div class="container">
+         <h1 class="sub-title">My Services</h1>
+         <div class="services-list">
+            <div>
+               <h2>Web Design</h2>
+               <p>Responsive and modern website design for all devices.</p>
+               <a href="#">Learn more</a>
+            </div>
+            <div>
+               <h2>UI/UX Design</h2>
+               <p>Beautiful and user-friendly interfaces for apps and websites.</p>
+               <a href="#">Learn more</a>
+            </div>
+            <div>
+               <h2>App Design</h2>
+               <p>Creative mobile app designs for Android and iOS platforms.</p>
+               <a href="#">Learn more</a>
+            </div>
          </div>
-         <div>
-             <h2>UI/UX Design</h2>
-             <p>Hi, My Name Is Muhammad Awais. I'm a Web Developer. <br>I Make a Web sized. My Salary is Fifty Dollar.
-             </p>
-             <a href="#">Learn more.</a>
-         </div>
-             <div>
-            <h2>App Design</h2>
-             <p>Hi, My Name Is Muhammad Awais. I'm a Web Developer. <br>I Make a Web sized. My Salary is Fifty Dollar.
-             </p>
-             <a href="#">Learn more.</a>
-         </div>
-    </div>
+      </div>
    </div>
-   </div>
-   <!-- ----------portfolio------------ -->
-   <div id="Portfolio">
+
+   <!-- ---------- PORTFOLIO ---------- -->
+   <div id="portfolio">
       <div class="container">
          <h1 class="sub-title">My Work</h1>
          <div class="work-list">
-         <div class="work">
-          <img src="image/D-pic.jfif">
-          <div class="layer">
-            <h3>Social Media App</h3>
-            <p>The app connects you yo the talented people around the world. Download it from play.</p>
-            <a href="#"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-         </div>
-          <div class="work">
-          <img src="image/A-pic.webp">
-           <div class="layer">
-            <h3>Music App</h3>
-            <p>The app connects you yo the talented people around the world. Download it from play.</p>
-            <a href="#"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-         </div>
-          <div class="work">
-          <img src="image/c-pic.jfif">
-           <div class="layer">
-            <h3>Online Shopping App</h3>
-            <p>The app connects you yo the talented people around the world. Download it from play.</p>
-            <a href="#"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-         </div>
+            <div class="work">
+               <img src="image/D-pic.jfif">
+               <div class="layer">
+                  <h3>Social Media App</h3>
+                  <p>Connects you to talented people around the world.</p>
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="image/A-pic.webp">
+               <div class="layer">
+                  <h3>Music App</h3>
+                  <p>Stream your favorite songs anytime, anywhere.</p>
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="image/c-pic.jfif">
+               <div class="layer">
+                  <h3>Online Shopping App</h3>
+                  <p>Shop from thousands of products easily.</p>
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+               </div>
+            </div>
          </div>
          <a href="#" class="btn">See more</a>
       </div>
    </div>
-   <!-- ----------contact---------- -->
-    <div id="contact">
+
+   <!-- ---------- CONTACT ---------- -->
+   <div id="contact">
       <div class="container">
          <div class="row">
             <div class="contact-left">
                <h1 class="sub-title">Contact Me</h1>
-               <p><i class="fas-fa-paper-plane"></i> contact@example.com</p>
+               <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
                <p><i class="fas fa-phone-square-alt"></i> 03008266623</p>
-               <div class="socila-icons">
-               <a href="https://facebook.com/"><i class="fab fa-facbook"></i></a>
-                <a href=""><i class="fab fa-twitter-square"></i></a>
-                 <a href=""><i class="fab fa-instargram"></i></a>
-                  <a href=""><i class="fab fa-linkedin"></i></a>
+               <div class="social-icons">
+                  <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
                </div>
-               <a href="images/"  download class="btn btn2">Download Cv</a>
+               <a href="cv.pdf" download class="btn btn2">Download CV</a>
             </div>
-             <div class="contact-right"></div>
-             <form>
-               <input type="text" name="Name" placeholder="Your Name" required>
-               <input type="email" name="email" placeholder="Your Email" required>
-               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-               <button type="submit" class="btn btn2">Submit</button>
-             </form>
+
+            <div class="contact-right">
+               <form>
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+               </form>
+            </div>
          </div>
       </div>
       <div class="copyright">
-         <p>Copyright @ Awais. Made wtih<i class="fas fa-heart"></i> by Easy Tutorials</p>
+         <p>Copyright © Awais. Made with <i class="fas fa-heart"></i></p>
       </div>
-    </div>
+   </div>
 
-
-
-   
+   <!-- ---------- SCRIPT ---------- -->
    <script>
-   var tablinks = document.getElementsByClassName("tab-links");
-   var tabcontents = document.getElementsByClassName("tab-contents");
+      // Tabs
+      function opentab(tabname) {
+         var tablinks = document.getElementsByClassName("tab-links");
+         var tabcontents = document.getElementsByClassName("tab-contents");
 
-   function opentab(tabname) {
-      // Remove active classes
-      for (var tablink of tablinks) {
-         tablink.classList.remove("active-link");
+         for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+         }
+         for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+         }
+
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
       }
-      for (var tabcontent of tabcontents) {
-         tabcontent.classList.remove("active-tab");
-      }
 
-      // Add active classes to the clicked tab and corresponding content
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-   }
-</script>
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById('menu-btn');
+      const navbar = document.getElementById('navbar');
 
+      menuBtn.addEventListener('click', () => {
+         navbar.classList.toggle('active');
+      });
+   </script>
 </body>
 
 </html>
